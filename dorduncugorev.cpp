@@ -21,8 +21,10 @@ int main(){
 	
 	struct Province ank;
 	ank.name = "Ankara";
-//	ank.domain = &tr;
+
 	tr.capital = &ank;
+//	ank.domain = &tr;  gerekli deðil
+
 	
 	struct Province ist;
 	ist.name = "Istanbul";
@@ -30,10 +32,4 @@ int main(){
 	
 	std::cout << (ist.domain)->name;
 	
-/*	
-	int b = 5;
-	int* a = &b;
-	b= 7;
-	std::cout << "a: " << a << " b: " << &b << std::endl;
-*/	
 }
